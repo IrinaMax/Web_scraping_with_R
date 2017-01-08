@@ -53,14 +53,14 @@
     + .[[3]] %>%
     + html_table()
                                    X1                                           X2
-1                   Amazon Affiliates                            Amazon Affiliates
-2 Amazon VideoWatch Movies &TV Online Prime VideoUnlimited Streamingof Movies & TV
+    1                   Amazon Affiliates                            Amazon Affiliates
+    2 Amazon VideoWatch Movies &TV Online Prime VideoUnlimited Streamingof Movies & TV
                                         X3                                     X4
-1                        Amazon Affiliates                      Amazon Affiliates
-2 Amazon GermanyBuy Movies onDVD & Blu-ray Amazon ItalyBuy Movies onDVD & Blu-ray
+    1                        Amazon Affiliates                      Amazon Affiliates
+    2 Amazon GermanyBuy Movies onDVD & Blu-ray Amazon ItalyBuy Movies onDVD & Blu-ray
                                        X5                                    X6
-1                       Amazon Affiliates                     Amazon Affiliates
-2 Amazon FranceBuy Movies onDVD & Blu-ray Amazon IndiaBuy Movie andTV Show DVDs
+    1                       Amazon Affiliates                     Amazon Affiliates
+    2 Amazon FranceBuy Movies onDVD & Blu-ray Amazon IndiaBuy Movie andTV Show DVDs
                           X7                         X8
-1          Amazon Affiliates          Amazon Affiliates
-2 DPReviewDigitalPhotography AudibleDownloadAudio Books
+    1          Amazon Affiliates          Amazon Affiliates
+    2 DPReviewDigitalPhotography AudibleDownloadAudio Books
