@@ -47,10 +47,11 @@
  [5] "David Burrows"   "Anthony Daniels" "Charlie Day"     "Amanda Farinos" 
  [9] "Keith Ferguson"  "Will Ferrell"    "Will Forte"      "Dave Franco"    
 [13] "Morgan Freeman"  "Todd Hansen"     "Jonah Hill"     
-> lego_movie %>%
-+ html_nodes("table") %>%
-+ .[[3]] %>%
-+ html_table()
+    
+    lego_movie %>%
+    + html_nodes("table") %>%
+    + .[[3]] %>%
+    + html_table()
                                    X1                                           X2
 1                   Amazon Affiliates                            Amazon Affiliates
 2 Amazon VideoWatch Movies &TV Online Prime VideoUnlimited Streamingof Movies & TV
