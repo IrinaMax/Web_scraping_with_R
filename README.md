@@ -1,6 +1,6 @@
 # Web_scraping_with_R
- library(rvest)
-##Loading required package: xml2
+     library(rvest)
+ Loading required package: xml2
  
     html <- read_html("http://www.imdb.com/title/tt1490017/")
     cast <- html_nodes(html, "#titleCast .itemprop")
@@ -43,10 +43,10 @@
     + html_nodes("#titleCast .itemprop span") %>%
     + html_text()
  
- [1] "Will Arnett"     "Elizabeth Banks" "Craig Berry"     "Alison Brie"    
- [5] "David Burrows"   "Anthony Daniels" "Charlie Day"     "Amanda Farinos" 
- [9] "Keith Ferguson"  "Will Ferrell"    "Will Forte"      "Dave Franco"    
-[13] "Morgan Freeman"  "Todd Hansen"     "Jonah Hill"     
+     [1] "Will Arnett"     "Elizabeth Banks" "Craig Berry"     "Alison Brie"    
+     [5] "David Burrows"   "Anthony Daniels" "Charlie Day"     "Amanda Farinos" 
+     [9] "Keith Ferguson"  "Will Ferrell"    "Will Forte"      "Dave Franco"    
+    [13] "Morgan Freeman"  "Todd Hansen"     "Jonah Hill"     
     
     lego_movie %>%
     + html_nodes("table") %>%
