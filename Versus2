@@ -7,6 +7,8 @@ movie <- read_html("http://www.imdb.com/title/tt1431045")
 url <- "http://www.imdb.com/title/tt1431045"
 url <- "http://www.imdb.com/title/tt2488496"
 
+# Better to use Selector Gadget to get the node you want to
+
 movie <- read_html(url)
 
 movie %>% html_node(".summary_text") %>% html_text()
