@@ -19,4 +19,4 @@ movie %>% html_node("strong span") %>% html_text() %>% as.numeric()
 movie %>% html_nodes("#titleCast,.itemprop span") %>% html_text()
 
 
-movie %>% html_node("table") %>% .[[1]] %>%  html_text()
+movie %>% html_node("table") %>% .[[1]] %>%  html_table()
