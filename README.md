@@ -5,10 +5,10 @@
     html <- read_html("http://www.imdb.com/title/tt1490017/")
     cast <- html_nodes(html, "#titleCast .itemprop")
     length(cast)
-[1] 30
+    [1] 30
 
      cast[1:2]
-   {xml_nodeset (2)}
+     {xml_nodeset (2)}
     
      [1] <td class="itemprop" itemprop="actor" itemscope="" itemtype="http://schema.org/Person" ...
      [2] <span class="itemprop" itemprop="name">Will Arnett</span>
