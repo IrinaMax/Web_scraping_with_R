@@ -24,11 +24,7 @@
     [5] "David Burrows"   "Anthony Daniels" "Charlie Day"     "Amanda Farinos" 
     [9] "Keith Ferguson"  "Will Ferrell"    "Will Forte"      "Dave Franco"    
     [13] "Morgan Freeman"  "Todd Hansen"     "Jonah Hill"     
-    > #>  [1] "Will Arnett"     "Elizabeth Banks" "Craig Berry"
-    > #>  [4] "Alison Brie"     "David Burrows"   "Anthony Daniels"
-    > #>  [7] "Charlie Day"     "Amanda Farinos"  "Keith Ferguson"
-    > #> [10] "Will Ferrell"    "Will Forte"      "Dave Franco"
-    > #> [13] "Morgan Freeman"  "Todd Hansen"     "Jonah Hill"
+    
     > lego_movie <- html("http://www.imdb.com/title/tt1490017/")
     Warning message:
     'html' is deprecated.
