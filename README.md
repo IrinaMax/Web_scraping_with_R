@@ -1,4 +1,6 @@
 # Web_scraping_with_R
+Web Scraping in general is almost always going to be unique to your personal use case, this is because every website is different, updates occur, and things can change.
+
      library(rvest)
  Loading required package: xml2
  
