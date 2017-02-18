@@ -40,6 +40,9 @@ If you don't know HTML or CSS, you may be able to use an auto-web-scrape tool, l
     + html_text() %>%
     + as.numeric()
     [1] 7.8
+    
+ use a similar process to extract the cast, using html_nodes() to find all nodes that match the selector:   
+    
     > lego_movie %>%
     + html_nodes("#titleCast .itemprop span") %>%
     + html_text()
