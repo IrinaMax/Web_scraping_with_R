@@ -53,6 +53,9 @@ If you don't know HTML or CSS, you may be able to use an auto-web-scrape tool, l
     + html_nodes("table") %>%
     + .[[3]] %>%
     + html_table()
+    
+The titles and authors of recent message board postings are stored in a the third table on the page. We can use html_node() and [[ ]] to find it, then coerce it to a data frame with html_table():
+
                                    X1                                           X2
     1                   Amazon Affiliates                            Amazon Affiliates
     2 Amazon VideoWatch Movies &TV Online Prime VideoUnlimited Streamingof Movies & TV
