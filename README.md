@@ -3,8 +3,8 @@ Web Scraping in general is almost always going to be unique to your personal use
 If you don't know HTML or CSS, you may be able to use an auto-web-scrape tool, like import.io. Check it out, it will auto scrape and create a csv file for you.
 
       # Will also install dependencies
-       install.packages('rvest')
-       library(rvest)
+     install.packages('rvest')
+     library(rvest)
  Loading required package: xml2
  
     html <- read_html("http://www.imdb.com/title/tt1490017/")
