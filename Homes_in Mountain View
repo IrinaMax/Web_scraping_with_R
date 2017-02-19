@@ -157,3 +157,28 @@ Error in row.names(name) : object 'name' not found
 13   zpid_19513431             211 Elmwood St, Mountain View, CA  830000 <chr [3]>     2     1        792
 14   zpid_19536397           219 Carmelita Dr, Mountain View, CA 2050000 <chr [3]>     2     2       1008
 15   zpid_19508370                374 Fay Way, Mountain View, CA 1799000 <chr [3]>     3     2       1628
+
+# and here is the other way which will constract data tibble, but it will look quite different
+df_tibble <- html_nodes(h, ".photo-cards li article") %>% map(xml_attrs) %>% map_df(~as.list(.))
+df_tibble
+df_tibble$`data-audiencetesteventlabel` <-NULL
+df_tibble$`data-grouped` <- NULL
+# A tibble: 15 × 8
+   `data-photocount` `data-latitude` `data-longitude`              id `data-pgapt` `data-zpid`                                                        class
+               <chr>           <chr>            <chr>           <chr>        <chr>       <chr>                                                        <chr>
+1                 24        37375049       -122080032   zpid_80131400      ForSale    80131400 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+2                 30        37412380       -122086470   zpid_19512928      ForSale    19512928 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+3                 26        37396960       -122075823   zpid_19516153      ForSale    19516153 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+4                 15        37391296       -122073303  zpid_122249030      ForSale   122249030 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+5                 28        37402423       -122100440 zpid_2095316847      ForSale  2095316847 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+6                 15        37399127       -122062732   zpid_19517376      ForSale    19517376 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+7                 36        37403282       -122086409   zpid_19511665      ForSale    19511665 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+8                 35        37404571       -122090996   zpid_19512189      ForSale    19512189 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+9                 39        37375417       -122075789   zpid_63056778      ForSale    63056778 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+10                28        37383233       -122075095   zpid_59682876      ForSale    59682876 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+11                16        37403195       -122089318   zpid_19511234      ForSale    19511234 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+12                22        37405589       -122085771   zpid_19511573      ForSale    19511573 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+13                 5        37397369       -122079322   zpid_19513431      ForSale    19513431 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+14                 4        37375957       -122073802   zpid_19536397      ForSale    19536397 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+15                30        37408672       -122095376   zpid_19508370      ForSale    19508370 zsg-photo-card photo-card zsg-aspect-ratio type-not-favorite
+# ... with 1 more variables: `data-sgapt` <chr>
