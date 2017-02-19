@@ -1,4 +1,4 @@
-
+# YOU NEED TO KNOW HTML AND CSS FOR THIS PROJECT,AND WILL ALSO NEED TO KNOW THE PIPE OPERATOR IN R 
 > library(rvest)
 > library(tidyr)
 > #page <- read_html("https://www.zillow.com/homes/Mountain-View-CA_rb/")
