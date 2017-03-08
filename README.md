@@ -44,26 +44,28 @@
               + html_node(".zsg-photo-card-address") %>%
               + html_text()
       address
- [1] "1585 Bonita Ave, Mountain View, CA"            "710 Telford Ave, Mountain View, CA"           
- [3] "285 Santa Rosa Ave, Mountain View, CA"         "215 Shumway Ln, Mountain View, CA"            
- [5] "188 College Ave, Mountain View, CA"            "119 Flynn Ave APT A, Mountain View, CA"       
- [7] "513 Burgoyne St, Mountain View, CA"            "271 Sierra Vista Ave APT 6, Mountain View, CA"
- [9] "1569 Glen Una Ct, Mountain View, CA"           "174 Centre St, Mountain View, CA"             
-[11] "381 Farley St, Mountain View, CA"              "823 Burgoyne St, Mountain View, CA"           
-[13] "211 Elmwood St, Mountain View, CA"             "219 Carmelita Dr, Mountain View, CA"          
-[15] "374 Fay Way, Mountain View, CA"               
-> price <- houses %>%
-+ html_node(".zsg-photo-card-price") %>%
-+ html_text() %>%
-+ readr::parse_number()
-> price
- [1] 1498000 1698000 1999999 2098000 1299000  649000 2398000 1025000 2200000 1690000 1650000 2500000
-[13]  830000 2050000 1799000
-> params <- houses %>%
-+ html_node(".zsg-photo-card-info") %>%
-+ html_text() %>%
-+ strsplit("\u00b7")
-> params
+     [1] "1585 Bonita Ave, Mountain View, CA"            "710 Telford Ave, Mountain View, CA"           
+     [3] "285 Santa Rosa Ave, Mountain View, CA"         "215 Shumway Ln, Mountain View, CA"            
+     [5] "188 College Ave, Mountain View, CA"            "119 Flynn Ave APT A, Mountain View, CA"       
+     [7] "513 Burgoyne St, Mountain View, CA"            "271 Sierra Vista Ave APT 6, Mountain View, CA"
+     [9] "1569 Glen Una Ct, Mountain View, CA"           "174 Centre St, Mountain View, CA"             
+    [11] "381 Farley St, Mountain View, CA"              "823 Burgoyne St, Mountain View, CA"           
+    [13] "211 Elmwood St, Mountain View, CA"             "219 Carmelita Dr, Mountain View, CA"          
+    [15] "374 Fay Way, Mountain View, CA"               
+     price <- houses %>%
+     html_node(".zsg-photo-card-price") %>%
+                                       + html_text() %>%
+                                       + readr::parse_number()
+Let's see the price and all other parameters                                      
+                                       
+      price
+      [1] 1498000 1698000 1999999 2098000 1299000  649000 2398000 1025000 2200000 1690000 1650000 2500000
+      [13]  830000 2050000 1799000
+      params <- houses %>%
+                      + html_node(".zsg-photo-card-info") %>%
+                      + html_text() %>%
+                      + strsplit("\u00b7")
+      params
 [[1]]
 [1] "3 bds "      " 2 ba "      " 1,178 sqft"
 
