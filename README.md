@@ -2,13 +2,14 @@
 my file WebScrap_MountainVew.R
    ![screenshot 2017-03-07zillow](https://cloud.githubusercontent.com/assets/16123495/23693755/eb8efa78-038a-11e7-93eb-ad4c59ad928b.png)
 
-    This script will show how toscrab information from the web page and create the table
-    YOU NEED TO KNOW HTML AND CSS FOR THIS PROJECT,AND WILL ALSO NEED TO KNOW THE PIPE OPERATOR IN R 
+    This script will show how to scrab information from the web page and create the table
+    YOU NEED TO KNOW HTML AND CSS FOR THIS PROJECT, AND ALSO Will NEED TO KNOW THE PIPE OPERATOR IN R 
       library(rvest)
       library(tidyr)
       #page <- read_html("https://www.zillow.com/homes/Mountain-View--CA_rb/")
       page <- read_html('https://www.zillow.com/homes/for_sale/Mountain-View--CA/fsba,fsbo,fore,cmsn_lt/house_type/32999_rid/globalrelevanceex_sort/37.496516,-121.906528,37.329628,-122.256718_rect/11_zm/0_mmm/")
-      #//*[(@id = "list-results")] # moitip - ubrat vtoroy defis posle view
+      #//*[(@id = "list-results")] 
+      # moitip - ubrat vtoroy defis posle view
       
        houses <- page %>%
        html_nodes(".photo-cards li article")
